@@ -7,3 +7,4 @@ python-decouple
 PyJWT
 psycopg2-binary
 Pillow
+django-summernote

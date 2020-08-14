@@ -1,0 +1,33 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="{{ setting.language }}">
+<head>
+  <title>Enigma Blog</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  {% block css %}
+    {% include 'base/css.html' %}
+  {% endblock %}
+</head>
+<body>
+<div class="base-wrapper">
+  <div class="mdl-layout mdl-js-layout">
+    <main class="mdl-layout__content">
+      <div class="page-content">
+        {% block content %}
+
+
+
+        {% endblock %}
+      </div>
+    </main>
+  </div>
+  {% block js %}
+    {% include 'base/js.html' %}
+    <script type="text/javascript" src="{% static "site/javascript.js" %}"></script>
+  {% endblock %}
+</div>
+</body>
+
+</html>
