@@ -1,0 +1,9 @@
+sqlparse==0.2.4
+requests==2.21.0
+
+Django>=2.2, <2.3
+
+python-decouple
+PyJWT
+psycopg2-binary
+Pillow
