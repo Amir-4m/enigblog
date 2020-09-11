@@ -1,0 +1,28 @@
+{% load i18n %}
+<!-- Uses a header that scrolls with the text, rather than staying
+  locked at the top -->
+<header class="mdl-layout__header mdl-layout__header--scroll">
+  <div class="mdl-layout__header-row">
+    <!-- Title -->
+    <span class="mdl-layout-title">Enigma</span>
+    <!-- Add spacer, to align navigation to the right -->
+    <div class="mdl-layout-spacer"></div>
+
+    <!-- Navigation -->
+    <nav class="mdl-navigation">
+      <a class="mdl-navigation__link home-link" href="">{% trans "Home" %}</a>
+      <a class="mdl-navigation__link products-link" href="">{% trans "Products" %}</a>
+      <a class="mdl-navigation__link brands-link" href="">{% trans "Brands" %}</a>
+      <a class="mdl-navigation__link categories-link" href="">{% trans "Categories" %}</a>
+    </nav>
+  </div>
+</header>
+<div class="mdl-layout__drawer">
+  <span class="mdl-layout-title">Enigma</span>
+  <nav class="mdl-navigation">
+    <a class="mdl-navigation__link home-link" href="">{% trans "Home" %}</a>
+    <a class="mdl-navigation__link products-link" href="">{% trans "Products" %}</a>
+    <a class="mdl-navigation__link brands-link" href=""></a>
+    <a class="mdl-navigation__link categories-link" href=""></a>
+  </nav>
+</div>

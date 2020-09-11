@@ -54,7 +54,6 @@ coverage.xml
 *.log
 local_*.py
 media/*
-static/*
 db.sqlite3
 .idea
 *.tmp
